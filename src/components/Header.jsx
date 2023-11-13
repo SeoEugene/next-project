@@ -14,7 +14,7 @@ const Header = () => {
                 <div className="header__logo">
                     <a href="/">portfolio<em>developer</em></a>
                 </div>
-                <div className={`header__nav ${show ? "show" : ""}`} role="navigation" area-label="메인 메뉴">
+                <div className={`header__nav ${show ? "show" : ""}`} role="navigation" aria-label="메인 메뉴">
                     <ul>
                         {headerNav.map((nav, key) => (
                             <li key={key}>
@@ -26,7 +26,8 @@ const Header = () => {
                 <div className="header__nav__mobile"
                     id="headerToggle"
                     aria-controls="primary"
-                    aria-expanded={`${show ? "true" : "false"}`}
+                    // aria-expanded={`${show ? "true" : "false"}`}
+                    aria-expanded={show}
                     role="button"
                     onClick={toggleMenu}>
                     <span></span>
