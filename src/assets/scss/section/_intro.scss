@@ -3,6 +3,7 @@
 #intro {
     height: 100vh;
     background-color: #ffdddd;
+    margin-top: 58px;
 }
 
 .intro__inner {
@@ -67,9 +68,11 @@
 .intro__lines .line:nth-child(7) {
     height: 7px;
 }
+
 .intro__lines.bottom {
     display: none;
 }
+
 .intro__lines.bottom .line:nth-child(1) {
     height: 7px;
 }
@@ -140,30 +143,37 @@
     color: #ffdddd;
     text-decoration: underline;
 }
-@media (max-width: 1080px){
+
+@media (max-width: 1080px) {
     .intro__text .img {
         width: 150px;
         height: 15vh;
     }
 }
-@media (max-width: 800px){
+
+@media (max-width: 800px) {
     .intro__inner {
         align-items: center;
         justify-content: center;
     }
+
     .intro__lines.bottom {
         display: block;
     }
+
     .intro__text .text {
         font-size: 30px;
     }
+
     .intro__text .text:nth-child(2) {
         /* filter: brightness(); */
     }
+
     .intro__text img {
         width: 300px;
         height: 300px;
     }
+
     .intro__lines.bottom {
         display: block;
     }
